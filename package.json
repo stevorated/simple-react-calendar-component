@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "rm -rf ./dist && npm test && npm run build"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
@@ -39,7 +40,9 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "moment": "^2.24.0",
-    "uuid": "^3.3.3"
+    "uuid": "^3.3.3",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0"
   },
   "peerDependencies": {
     "react": "^16.10.2",
