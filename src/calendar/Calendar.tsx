@@ -1,0 +1,122 @@
+import React from 'react';
+import moment from 'moment';
+
+import PageInterface from './interfaces/Calendar.interface';
+import { dayOfWeek, makeMonthsArray, daysArray } from './utils';
+import CalendarRow from './CalendarRow';
+import CalendarHeaders from './CalendarHeaders';
+
+import './styles/Calendar.scss';
+
+class Calendar extends React.Component<PageInterface> {
+  static defaultProps = {
+    showMonth: false,
+  };
+
+  state = {
+    targetDay: 1,
+    targetDateString: '',
+  };
+
+  handleState = (data: object) => {
+    this.setState(data);
+  };
+
+  renderRows = (weeks: number[][]) => {
+    let {
+      onClickDay,
+      targetMonth,
+      targetDay,
+      targetDateString,
+      handleState,
+      dayComponent,
+      data,
+      rowContainerClassName,
+      dayContainerClassName,
+      dayDataListClass,
+      dayDataListItemClass,
+      colorPastDates,
+    } = this.props;
+
+    targetDay = handleState ? targetDay : this.state.targetDay;
+
+    targetDateString = handleState
+      ? targetDateString
+      : this.state.targetDateString;
+
+    let count = 0;
+
+    return weeks.map(week => {
+      if (!week.length) return '';
+      const key = `week-${count}-calendar`;
+      count++;
+      return (
+        <CalendarRow
+          data-test="calendarRow"
+          rowContainerClassName={rowContainerClassName || ''}
+          dayContainerClassName={dayContainerClassName || ''}
+          dayDataListClass={dayDataListClass || ''}
+          dayDataListItemClass={dayDataListItemClass || ''}
+          key={key}
+          week={week}
+          targetMonth={targetMonth}
+          targetDay={targetDay}
+          targetDateString={targetDateString}
+          handleState={handleState || this.handleState}
+          onClickDay={onClickDay}
+          dayComponent={dayComponent}
+          data={data}
+          colorPastDates={colorPastDates}
+        />
+      );
+    });
+  };
+
+  render() {
+    const {
+      targetMonth,
+      showMonth,
+      title,
+      width,
+      containerClassName,
+      daysHeaderContainerClass,
+      daysTitleContainerClass,
+      titleContainerClass,
+      monthTitleClass,
+    } = this.props;
+    const daysInMonth = moment(targetMonth).daysInMonth();
+    const targetMonthDayOfWeek = dayOfWeek(targetMonth);
+    const targetMonthString: string = moment(targetMonth).format('MMMM YYYY');
+    const weeksArray: number[][] = daysArray(daysInMonth, targetMonthDayOfWeek);
+    return (
+      <div
+        data-test="calendarContainer"
+        className={`calendarContainer ${containerClassName || ''}`}
+        style={{ width: width || '100%' }}
+      >
+        <div
+          data-test="calendarTitle"
+          className={`calendarTitle ${titleContainerClass || ''}`}
+        >
+          {title}
+        </div>
+        {showMonth && (
+          <div
+            data-test="monthTitle"
+            className={`monthTitle ${monthTitleClass || ''}`}
+          >
+            {targetMonthString}
+          </div>
+        )}
+        <CalendarHeaders
+          data-test="calendarHeaders"
+          daysHeaderContainerClass={daysHeaderContainerClass || ''}
+          daysTitleContainerClass={daysTitleContainerClass || ''}
+        />
+        {this.renderRows(weeksArray)}
+      </div>
+    );
+  }
+}
+
+export default Calendar;

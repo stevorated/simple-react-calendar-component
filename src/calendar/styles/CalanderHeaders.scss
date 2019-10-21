@@ -1,0 +1,19 @@
+.calendarDaysContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.calendarHeaderContainer {
+  margin: 0;
+  padding: 0;
+  width: 14%;
+  padding: 5px 0;
+  color: white;
+  background-color: grey;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+  // min-height: 30px;
+}
