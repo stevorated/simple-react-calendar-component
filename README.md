@@ -1,4 +1,4 @@
-**simple-react-calendar-component**
+# simple-react-calendar-component
 
 an easy to use react calander component.
 just 3 required props and you're on your way.
