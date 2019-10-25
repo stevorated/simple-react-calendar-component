@@ -1,7 +1,7 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 export const dayOfWeek = (date: string): number => {
-  const rawDay = moment(date).day();
+  const rawDay = dayjs(date).day();
   if (rawDay === 7) return 1;
   else return rawDay + 1;
 };
@@ -10,10 +10,10 @@ export const makeMonthsArray = (start: number, months: number) => {
   let i: number;
   let arr: object[] = [];
   for (i = 0; i < months + 1; i++) {
-    const monthToAddDate = moment(start)
+    const monthToAddDate = dayjs(start)
       .add(i, 'M')
       .format('YYYY-MM-DD');
-    const monthToAddText = moment(start)
+    const monthToAddText = dayjs(start)
       .add(i, 'M')
       .format('MMMM YY');
     arr.push({ monthToAddDate, monthToAddText });

@@ -22,6 +22,7 @@ const CalendarRow: FunctionComponent<Interface> = (props: Props) => {
     dayDataListClass,
     dayDataListItemClass,
     colorPastDates,
+    colorActiveDate,
   } = props;
 
   const renderRows = (week: number[]) => {
@@ -42,6 +43,7 @@ const CalendarRow: FunctionComponent<Interface> = (props: Props) => {
           dayComponent={dayComponent}
           data={data}
           colorPastDates={colorPastDates}
+          colorActiveDate={colorActiveDate}
         />
       );
     });
@@ -72,4 +74,5 @@ interface Props {
   dayDataListClass?: string;
   dayDataListItemClass?: string;
   colorPastDates?: string;
+  colorActiveDate?: string;
 }

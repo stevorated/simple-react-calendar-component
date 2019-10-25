@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import uuid from 'uuid';
 
 import Interface from './interfaces/CalendarDay.interface';
@@ -19,16 +19,17 @@ const CalendarDay: FunctionComponent<Interface> = (props: Props) => {
     dayDataListClass,
     dayDataListItemClass,
     colorPastDates,
+    colorActiveDate,
   } = props;
 
   const dayData = data && data.filter(item => item.day === day);
-  const active = day && day === targetDay ? 'calendarActiveDate' : '';
-  const activeNumber = day === targetDay ? 'calendarActiveDateNumber' : '';
-  const date = moment(targetMonth).add(day - 1, 'days');
+  const active = day && day === targetDay ? 'calanderActiveDate' : '';
+  const activeNumber = day === targetDay ? 'calanderActiveDateNumber' : '';
+  const date = dayjs(targetMonth).add(day - 1, 'day');
   const newDate = date.format('YYYY-MM-DD');
-  const now = moment();
-  const check = date.diff(now, 'days');
-  const passed = day && !!colorPastDates && check < 0 ? colorPastDates : '';
+  const now = dayjs();
+  const check = date.isBefore(now);
+  const passed = day && !!colorPastDates && check ? colorPastDates : '';
 
   const handleData = () =>
     dayData.map(item => (
@@ -44,12 +45,13 @@ const CalendarDay: FunctionComponent<Interface> = (props: Props) => {
   return (
     <div
       data-test="calendarDayContainer"
+      data-test2={`${active}`}
       onClick={() => {
         handleState({ targetDay: day, targetDateString: newDate });
         onClickDay && onClickDay(day, dayData);
       }}
+      style={{ backgroundColor: active.length ? colorActiveDate : passed }}
       className={`calendarDayContainer ${active} ${dayContainerClassName}`}
-      style={{ backgroundColor: passed }}
     >
       {day && (
         <p data-test="calendarNum" className={`calendarNum ${activeNumber}`}>
@@ -84,4 +86,5 @@ interface Props {
   dayDataListClass?: string;
   dayDataListItemClass?: string;
   colorPastDates?: string;
+  colorActiveDate?: string;
 }

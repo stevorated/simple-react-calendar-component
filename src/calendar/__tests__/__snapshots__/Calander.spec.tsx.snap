@@ -68,6 +68,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -78,6 +79,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -86,17 +88,18 @@ exports[`<Calendar /> should match snapshot 1`] = `
       }
     />
     <div
-      className="calendarDayContainer calendarActiveDate "
+      className="calendarDayContainer calanderActiveDate "
       data-test="calendarDayContainer"
+      data-test2="calanderActiveDate"
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "",
+          "backgroundColor": undefined,
         }
       }
     >
       <p
-        className="calendarNum calendarActiveDateNumber"
+        className="calendarNum calanderActiveDateNumber"
         data-test="calendarNum"
       >
         1
@@ -106,6 +109,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -124,6 +128,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -142,6 +147,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -160,6 +166,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -183,6 +190,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -201,6 +209,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -219,6 +228,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -237,6 +247,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -255,6 +266,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -273,6 +285,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -291,6 +304,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -314,6 +328,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -332,6 +347,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -350,6 +366,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -368,6 +385,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -386,6 +404,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -404,6 +423,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -422,6 +442,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -445,6 +466,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -463,6 +485,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -481,6 +504,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -499,6 +523,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -517,6 +542,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -535,6 +561,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -553,6 +580,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -576,6 +604,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -594,6 +623,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -612,6 +642,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -630,6 +661,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -648,6 +680,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -666,6 +699,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -676,6 +710,7 @@ exports[`<Calendar /> should match snapshot 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -768,6 +803,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -785,6 +821,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -800,17 +837,18 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
       </ul>
     </div>
     <div
-      className="calendarDayContainer calendarActiveDate "
+      className="calendarDayContainer calanderActiveDate "
       data-test="calendarDayContainer"
+      data-test2="calanderActiveDate"
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "",
+          "backgroundColor": undefined,
         }
       }
     >
       <p
-        className="calendarNum calendarActiveDateNumber"
+        className="calendarNum calanderActiveDateNumber"
         data-test="calendarNum"
       >
         1
@@ -843,6 +881,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -884,6 +923,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -908,6 +948,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -932,6 +973,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -961,6 +1003,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -985,6 +1028,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1009,6 +1053,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1033,6 +1078,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1057,6 +1103,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1081,6 +1128,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1105,6 +1153,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1134,6 +1183,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1158,6 +1208,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1182,6 +1233,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1206,6 +1258,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1230,6 +1283,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1254,6 +1308,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1278,6 +1333,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1307,6 +1363,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1331,6 +1388,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1355,6 +1413,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1379,6 +1438,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1403,6 +1463,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1427,6 +1488,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1451,6 +1513,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1480,6 +1543,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1504,6 +1568,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1528,6 +1593,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1552,6 +1618,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1576,6 +1643,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1600,6 +1668,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {
@@ -1617,6 +1686,7 @@ exports[`<Calendar /> should match snapshot with data and titles 1`] = `
     <div
       className="calendarDayContainer  "
       data-test="calendarDayContainer"
+      data-test2=""
       onClick={[Function]}
       style={
         Object {

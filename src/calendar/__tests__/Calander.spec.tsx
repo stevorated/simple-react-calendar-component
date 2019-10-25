@@ -1,37 +1,11 @@
 import React from 'react';
 import Calendar, { DataObj } from '../../index';
 import renderer from 'react-test-renderer';
-import { findByTestAttr } from '../test-utils';
+import { findByTestAttr, data, findByTestCustom } from '../test-utils';
 import { mount } from 'enzyme';
 
 let component;
 const title = 'ya alla';
-const data: DataObj[] = [
-  {
-    day: 1,
-    title: 'item 1',
-  },
-  {
-    day: 1,
-    title: 'item 2',
-  },
-  {
-    day: 1,
-    title: 'item 3',
-  },
-  {
-    day: 2,
-    title: 'item 4',
-  },
-  {
-    day: 2,
-    title: 'item 5',
-  },
-  {
-    day: 2,
-    title: 'item 6',
-  },
-];
 
 const setupRenderer = (props = {}) => {
   return renderer.create(
@@ -229,5 +203,17 @@ describe('<Calendar />', () => {
 
     expect(dayDataList.length).toBe(35);
     expect(dayDataListItem.length).toBe(data.length);
+  });
+
+  test('should render active day class with color', () => {
+    component = setupMountRender({ colorActiveDate: 'blue' });
+    const activeDay = findByTestCustom(
+      component,
+      'data-test2',
+      'calanderActiveDate'
+    );
+    expect(activeDay.props().style).toEqual({
+      backgroundColor: 'blue',
+    });
   });
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 import PageInterface from './interfaces/Calendar.interface';
 import { dayOfWeek, makeMonthsArray, daysArray } from './utils';
@@ -36,6 +36,7 @@ class Calendar extends React.Component<PageInterface> {
       dayDataListClass,
       dayDataListItemClass,
       colorPastDates,
+      colorActiveDate,
     } = this.props;
 
     targetDay = handleState ? targetDay : this.state.targetDay;
@@ -67,6 +68,7 @@ class Calendar extends React.Component<PageInterface> {
           dayComponent={dayComponent}
           data={data}
           colorPastDates={colorPastDates}
+          colorActiveDate={colorActiveDate}
         />
       );
     });
@@ -84,9 +86,9 @@ class Calendar extends React.Component<PageInterface> {
       titleContainerClass,
       monthTitleClass,
     } = this.props;
-    const daysInMonth = moment(targetMonth).daysInMonth();
+    const daysInMonth = dayjs(targetMonth).daysInMonth();
     const targetMonthDayOfWeek = dayOfWeek(targetMonth);
-    const targetMonthString: string = moment(targetMonth).format('MMMM YYYY');
+    const targetMonthString: string = dayjs(targetMonth).format('MMMM YYYY');
     const weeksArray: number[][] = daysArray(daysInMonth, targetMonthDayOfWeek);
     return (
       <div

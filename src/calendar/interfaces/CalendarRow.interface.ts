@@ -15,4 +15,5 @@ export default interface Component {
   dayDataListClass?: string;
   dayDataListItemClass?: string;
   colorPastDates?: string;
+  colorActiveDate?: string;
 }

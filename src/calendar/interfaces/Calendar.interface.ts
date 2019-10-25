@@ -19,6 +19,7 @@ export default interface Component {
   titleContainerClass?: string;
   monthTitleClass?: string;
   colorPastDates?: string;
+  colorActiveDate?: string;
 }
 
 export interface DataObj {
