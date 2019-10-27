@@ -1,4 +1,4 @@
-## Simple React Calendar Component
+## Simple React Calendar TypeScript
 
 an easy to use react calander component.
 just 3 required props and you're on your way.
@@ -7,7 +7,7 @@ just add an array with two values and now the calander will be automaticly rende
 
 # Install
 
-npm install simple-react-calendar-component
+npm install simple-react-calendar-ts
 
 # Simple Use
 
