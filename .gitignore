@@ -1,5 +1,8 @@
 dist/
+build/
 node_modules/
+unused/
+archive/
 
 package-lock.json
 yarn-lock.json

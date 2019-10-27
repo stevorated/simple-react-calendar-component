@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "baseUrl": "./dist/",
+    "outDir": "./build",
     "sourceMap": true,
     "noImplicitAny": false,
-    "module": "commonjs",
+    "module": "es6",
     "target": "es5",
     "lib": [
       "es2015",
@@ -14,13 +13,18 @@
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "allowJs": false,
+    "declaration": true,
+    "preserveConstEnums": true,
     "jsx": "react",
-    "allowJs": true,
-    // "paths": {
-    //   "components/*": [
-    //     "src/components/*"
-    //   ],
-    // }
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "exclude": [
     "./node_modules",

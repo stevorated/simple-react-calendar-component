@@ -38,9 +38,9 @@ export const daysArray = (max: number, start: number) => {
   return removeExtraArray(sliceArray(arr, 7));
 };
 
-export const sliceArray = (arr, chunk) => {
+export const sliceArray = (arr: number[], chunk: number) => {
   let finalArr = [];
-  let i, j, tempArray;
+  let i: number, j: number, tempArray: number[];
   for (i = 0, j = arr.length; i < j; i += chunk) {
     tempArray = arr.slice(i, i + chunk);
     finalArr.push(tempArray);
@@ -48,7 +48,7 @@ export const sliceArray = (arr, chunk) => {
   return finalArr;
 };
 
-const removeExtraArray = arr => {
+const removeExtraArray = (arr: number[][]) => {
   return arr.map(week => {
     if (week.filter(day => day !== null).length === 0) {
       return [];

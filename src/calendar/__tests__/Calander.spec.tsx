@@ -1,11 +1,11 @@
 import React from 'react';
-import Calendar, { DataObj } from '../../index';
+import Calendar from '../../../index';
 import renderer from 'react-test-renderer';
 import { findByTestAttr, data, findByTestCustom } from '../test-utils';
 import { mount } from 'enzyme';
 
 let component;
-const title = 'ya alla';
+const title: string = 'ya alla';
 
 const setupRenderer = (props = {}) => {
   return renderer.create(

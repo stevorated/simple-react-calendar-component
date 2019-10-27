@@ -2,7 +2,7 @@ import React from 'react';
 import dayjs from 'dayjs';
 
 import PageInterface from './interfaces/Calendar.interface';
-import { dayOfWeek, makeMonthsArray, daysArray } from './utils';
+import { dayOfWeek, daysArray } from './utils';
 import CalendarRow from './CalendarRow';
 import CalendarHeaders from './CalendarHeaders';
 
