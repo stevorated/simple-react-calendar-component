@@ -17,6 +17,7 @@ npm install simple-react-calendar-ts
 #### or 
 
 ```javascript
+
 import Calendar, { DataObj } from 'simple-react-calendar-ts';
   state = {
     targetDay: 1,
