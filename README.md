@@ -12,8 +12,6 @@ just add an array with two values and now the calander will be automaticly rende
 npm install simple-react-calendar-ts
 
 ```
---
---
 
 ## Simple Use
 
@@ -85,8 +83,6 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
 #### or 
 
 [Go to Full Example Repo](https://github.com/stevorated/simple-react-calendar-ts-example)
---
---
 
 ## Props
 
@@ -114,9 +110,6 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
 | colorActiveDate          | Optional  | string, custom color for active date                                    |
 
 ## License
---
---
---
 
 Copyright © 2019 <stevorated (Shirel Garber)>
 
