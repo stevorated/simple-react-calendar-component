@@ -20,7 +20,7 @@ npm install simple-react-calendar-ts
 import Calendar, { DataObj } from 'simple-react-calendar-ts';
   state = {
     targetDay: 1,
-    targetMonth: 2019-10-01
+    targetMonth: '2019-10-01'
   }
 
   handleState = (data) => {
@@ -50,6 +50,33 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
     colorActiveDate="palegoldenrod"
     colorPastDates="#f1f1f1"
   />
+
+  const data: DataObj[] = [
+  {
+    day: 1,
+    title: 'item 1',
+  },
+  {
+    day: 1,
+    title: 'item 2',
+  },
+  {
+    day: 1,
+    title: 'item 3',
+  },
+  {
+    day: 2,
+    title: 'item 4',
+  },
+  {
+    day: 2,
+    title: 'item 5',
+  },
+  {
+    day: 2,
+    title: 'item 6',
+  },
+];
 
   ```
 
