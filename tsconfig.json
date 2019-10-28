@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./dist",
     "sourceMap": true,
     "noImplicitAny": false,
     "module": "es6",
@@ -23,8 +23,8 @@
     "noImplicitThis": true,
 
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true
   },
   "exclude": [
     "./node_modules",

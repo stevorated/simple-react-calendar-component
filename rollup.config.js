@@ -26,7 +26,7 @@ export default {
     external(),
     resolve(),
     scss({
-      output: 'build/styles.css',
+      output: 'dist/styles.css',
     }),
     typescript({
       rollupCommonJSResolveHack: true,

@@ -27,7 +27,6 @@ class Calendar extends React.Component<PageInterface> {
       onClickDay,
       targetMonth,
       targetDay,
-      targetDateString,
       handleState,
       dayComponent,
       data,
@@ -40,11 +39,6 @@ class Calendar extends React.Component<PageInterface> {
     } = this.props;
 
     targetDay = handleState ? targetDay : this.state.targetDay;
-
-    targetDateString = handleState
-      ? targetDateString
-      : this.state.targetDateString;
-
     let count = 0;
 
     return weeks.map(week => {
@@ -62,7 +56,7 @@ class Calendar extends React.Component<PageInterface> {
           week={week}
           targetMonth={targetMonth}
           targetDay={targetDay}
-          targetDateString={targetDateString}
+          targetDateString={targetMonth}
           handleState={handleState || this.handleState}
           onClickDay={onClickDay}
           dayComponent={dayComponent}

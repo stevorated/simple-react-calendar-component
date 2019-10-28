@@ -1,7 +1,6 @@
 export default interface Component {
+  targetDay?: number;
   targetMonth : string;
-  targetDay: number;
-  targetDateString: string;
   title?: string;
   showMonth?: boolean;
   handleState?: (data: object) => void;

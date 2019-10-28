@@ -1,21 +1,20 @@
 {
   "name": "simple-react-calendar-ts",
   "version": "1.0.0",
-  "style": "./build/styles.css",
-  "types": "./build/index.d.ts",
-  "main": "./build/index.js",
-  "module": "./build/index.es.js",
-  "jsnext:main": "./build/index.es.js",
+  "style": "./dist/styles.css",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "jsnext:main": "./dist/index.es.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/stevorated/simple-react-calendar-component"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "build:rollup": "rollup -c",
-    "test": "jest",
-    "prepublish": "rm -rf ./dist && rm -rf ./build && npm test && npm run build:rollup"
+    "build": "rollup -c",
+    "test": "rm -rf ./dist && jest",
+    "prepublish": "rm -rf ./dist && rm -rf ./dist && npm test && npm run build"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.3",

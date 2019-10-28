@@ -7,37 +7,23 @@ import { mount } from 'enzyme';
 let component;
 const title: string = 'ya alla';
 
-const setupRenderer = (props = {}) => {
-  return renderer.create(
-    <Calendar
-      targetDay={1}
-      targetDateString="2019-10-01"
-      targetMonth="2019-10-01"
-      {...props}
-    />
-  );
+const setupRender = (props = {}) => {
+  return renderer.create(<Calendar targetMonth="2019-10-01" {...props} />);
 };
 
 const setupMountRender = (props = {}) => {
-  return mount(
-    <Calendar
-      targetDay={1}
-      targetDateString="2019-10-01"
-      targetMonth="2019-10-01"
-      {...props}
-    />
-  );
+  return mount(<Calendar targetMonth="2019-10-01" {...props} />);
 };
 
 describe('<Calendar />', () => {
   test('should match snapshot', () => {
-    let rendered = setupRenderer({});
+    let rendered = setupRender({});
     const tree = rendered.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('should match snapshot with data and titles', () => {
-    let rendered = setupRenderer({ data, title, showMonth: true });
+    let rendered = setupRender({ data, title, showMonth: true });
     const tree = rendered.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -215,5 +201,36 @@ describe('<Calendar />', () => {
     expect(activeDay.props().style).toEqual({
       backgroundColor: 'blue',
     });
+  });
+  test('should handle clicks (mock fns)', () => {
+    const handleState = jest.fn();
+    const onClickDay = jest.fn();
+    component = setupMountRender({
+      handleState,
+      onClickDay,
+    });
+    const day = findByTestAttr(component, 'calendarDayContainer').at(10);
+    day.simulate('click');
+    expect(handleState).toHaveBeenCalledWith({
+      targetDateString: '2019-10-09',
+      targetDay: 9,
+    });
+    expect(onClickDay).toHaveBeenCalled();
+  });
+  test('should handle state', () => {
+    component = setupMountRender({});
+    const day = findByTestAttr(component, 'calendarDayContainer').at(10);
+    day.simulate('click');
+    expect(component.state()).toStrictEqual({
+      targetDay: 9,
+      targetDateString: '2019-10-09',
+    });
+    const x = findByTestAttr(component, 'calendarDayContainer').at(10);
+    const classNames = x
+      .props()
+      .className.split(' ')
+      .filter(item => item === 'calanderActiveDate');
+    expect(classNames.length).toBe(1);
+    expect(classNames[0]).toBe('calanderActiveDate');
   });
 });
