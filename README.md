@@ -1,5 +1,4 @@
 # Simple React Calendar TypeScript
-======
 
 an **easy** to use react calander component.
 just 2 required props and you're on your way.
