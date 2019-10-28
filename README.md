@@ -87,27 +87,27 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
 ## Props
 
 | name                     | Required? | Type, Description                                                       |
-| :----------------------- |:--------- |:----------------------------------------------------------------------- |
-| targetDay                | Required  | number, day in focus                                                    |
-| targetMonth              | Required  | string, month to show                                                   |
-| title                    | Optional  | string, inner calendar title                                            |
-| showMonth                | Optional  | boolean, show month in Calendar                                         |
-| handleState              | Optional  | (data: object) => void, control state                                   |
-| onClickDay               | Optional  | (day: number, dayData: any) => void, function to fire when day clicked  |
-| dayComponent             | Optional  | object, html object to be rendered in each day                          |
-| data                     | Optional  | DataObj (name export), data to be rendered into calendar by day         |
-| width                    | Optional  | string, width or main calendar container                                |
-| containerClassName       | Optional  | string, main calendar container custom css class                        |
-| rowContainerClassName    | Optional  | string, custom css class for rows                                       |
-| dayContainerClassName    | Optional  | string, custom css class for day container                              |
-| dayDataListClass         | Optional  | string, custom css class for data prop rendering                        |
-| dayDataListItemClass     | Optional  | string, custom css class for data prop item rendering                   |
-| daysHeaderContainerClass | Optional  | string, custom css class for day headers row                            |
-| daysTitleContainerClass  | Optional  | string, custom css class for day header                                 |
-| titleContainerClass      | Optional  | string, custom css class for inner calendar title                       |
-| monthTitleClass          | Optional  | string, custom css class for month title                                |
-| colorPastDates           | Optional  | string, custom color for past dates                                     |
-| colorActiveDate          | Optional  | string, custom color for active date                                    |
+| :----------------------- |:----------------------------------------------------------------------- |:--------- | 
+| targetDay                | number, day in focus                                                    | Required  | 
+| targetMonth              | string, month to show                                                   | Required  | 
+| title                    | string, inner calendar title                                            | Optional  | 
+| showMonth                | boolean, show month in Calendar                                         | Optional  | 
+| handleState              | (data: object) => void, control state                                   | Optional  | 
+| onClickDay               | (day: number, dayData: any) => void, function to fire when day clicked  | Optional  | 
+| dayComponent             | object, html object to be rendered in each day                          | Optional  | 
+| data                     | DataObj (name export), data to be rendered into calendar by day         | Optional  | 
+| width                    | string, width or main calendar container                                | Optional  | 
+| containerClassName       | string, main calendar container custom css class                        | Optional  | 
+| rowContainerClassName    | string, custom css class for rows                                       | Optional  | 
+| dayContainerClassName    | string, custom css class for day container                              | Optional  | 
+| dayDataListClass         | string, custom css class for data prop rendering                        | Optional  | 
+| dayDataListItemClass     | string, custom css class for data prop item rendering                   | Optional  | 
+| daysHeaderContainerClass | string, custom css class for day headers row                            | Optional  | 
+| daysTitleContainerClass  | string, custom css class for day header                                 | Optional  | 
+| titleContainerClass      | string, custom css class for inner calendar title                       | Optional  | 
+| monthTitleClass          | string, custom css class for month title                                | Optional  | 
+| colorPastDates           | string, custom color for past dates                                     | Optional  | 
+| colorActiveDate          | string, custom color for active date                                    | Optional  | 
 
 ## License
 
