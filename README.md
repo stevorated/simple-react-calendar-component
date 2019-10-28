@@ -16,10 +16,6 @@ npm install simple-react-calendar-ts
 
 ## Simple Use
 
-[Go to Full Example Repo](https://github.com/stevorated/simple-react-calendar-ts-example)
-
-#### or 
-
 ```javascript
 
 import Calendar, { DataObj } from 'simple-react-calendar-ts';
@@ -57,3 +53,7 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
   />
 
   ```
+
+#### or 
+
+[Go to Full Example Repo](https://github.com/stevorated/simple-react-calendar-ts-example)
