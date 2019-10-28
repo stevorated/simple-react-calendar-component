@@ -82,5 +82,3 @@ import Calendar, { DataObj } from 'simple-react-calendar-ts';
 | monthTitleClass          | Optional  | string, custom css class for month title                                |
 | colorPastDates           | Optional  | string, custom color for past dates                                     |
 | colorActiveDate          | Optional  | string, custom color for active date                                    |
-
-## Cantact Us
