@@ -6,9 +6,13 @@ just 2 required props and you're on your way.
 easy classNames and optional custom classes
 just add an array with two values and now the calander will be automaticly rendered with the data.
 
-## Install
+## Installation
+
+```javascript
 
 npm install simple-react-calendar-ts
+
+```
 
 ## Simple Use
 
